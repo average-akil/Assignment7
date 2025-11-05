@@ -1,0 +1,114 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Viral Kohli",
+      "country": "India",
+      "role": "All-Rounder",
+      "batting_style": "Left-Hand-Bat",
+      "rating": 4.8,
+      "price": 1500000,
+      "image": "https://cdn.zeebiz.com/sites/default/files/2022/11/05/209096-virat-kohli-7-pti.jpg",
+      "action": "Choose Player"
+    },
+    {
+      "id": 2,
+      "name": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "role": "All-Rounder",
+      "batting_style": "Left-Hand-Bat",
+      "rating": 4.9,
+      "price": 1200000,
+      "image": "https://example.com/images/shakib.png",
+      "action": "Choose Player"
+    },
+    {
+      "id": 3,
+      "name": "Tamim Iqbal",
+      "country": "Bangladesh",
+      "role": "Batsman",
+      "batting_style": "Left-Hand-Bat",
+      "rating": 4.5,
+      "price": 950000,
+      "image": "https://example.com/images/tamim.png",
+      "action": "Choose Player"
+    },
+    {
+      "id": 4,
+      "name": "Mustafizur Rahman",
+      "country": "Bangladesh",
+      "role": "Bowler",
+      "batting_style": "Left-Arm Fast",
+      "rating": 4.6,
+      "price": 800000,
+      "image": "https://example.com/images/mustafiz.png",
+      "action": "Choose Player"
+    },
+    {
+      "id": 5,
+      "name": "Andre Russell",
+      "country": "West Indies",
+      "role": "All-Rounder",
+      "batting_style": "Right-Hand-Bat",
+      "rating": 4.7,
+      "price": 1500000,
+      "image": "https://example.com/images/russell.png",
+      "action": "Choose Player"
+    },
+    {
+      "id": 6,
+      "name": "Litton Das",
+      "country": "Bangladesh",
+      "role": "Wicket-Keeper Batsman",
+      "batting_style": "Right-Hand-Bat",
+      "rating": 4.4,
+      "price": 700000,
+      "image": "https://example.com/images/litton.png",
+      "action": "Choose Player"
+    },
+    {
+      "id": 7,
+      "name": "David Warner",
+      "country": "Australia",
+      "role": "Batsman",
+      "batting_style": "Left-Hand-Bat",
+      "rating": 4.6,
+      "price": 1400000,
+      "image": "https://example.com/images/warner.png",
+      "action": "Choose Player"
+    },
+    {
+      "id": 8,
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "role": "Batsman",
+      "batting_style": "Right-Hand-Bat",
+      "rating": 4.9,
+      "price": 1450000,
+      "image": "https://example.com/images/babar.png",
+      "action": "Choose Player"
+    },
+    {
+      "id": 9,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "role": "Bowler",
+      "batting_style": "Right-Hand-Bat",
+      "rating": 4.8,
+      "price": 1300000,
+      "image": "https://example.com/images/rashid.png",
+      "action": "Choose Player"
+    },
+    {
+      "id": 10,
+      "name": "Kieron Pollard",
+      "country": "West Indies",
+      "role": "All-Rounder",
+      "batting_style": "Right-Hand-Bat",
+      "rating": 4.5,
+      "price": 1250000,
+      "image": "https://example.com/images/pollard.png",
+      "action": "Choose Player"
+    }
+  ]
+}
