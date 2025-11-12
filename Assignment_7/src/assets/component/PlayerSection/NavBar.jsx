@@ -2,11 +2,11 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <div>
+        <div className='flex justify-between'>
             <div>
                 Available Players
             </div>
-            <div>
+            <div className=' gap-2'>
                 <button>Available</button>
                 <button>Selected</button>
             </div>
@@ -14,9 +14,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;<div>
-Available Players</div>
-<div>
-    <button>Available</button>
-    <button>Selected</button>
-</div>
+export default NavBar;

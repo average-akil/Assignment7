@@ -1,6 +1,7 @@
 import React from "react";
-
-const Header = () => {
+ import Hero from "../Hero/Hero";
+ import balance from "../Hero/Hero"
+const Header = ({balance}) => {
   return (
     <div className="flex justify-between">
       <div>
@@ -12,8 +13,8 @@ const Header = () => {
         <button className="text-slate-500 hover:text-black  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Team</button>
         <button className="text-slate-500 hover:text-black  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Schedule</button>
      
-          <button className="text-slate-500 hover:text-black flex  items-center gap-1  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">
-            0 Coin{" "}
+          <button id="Balance" className="text-slate-500 hover:text-black flex justify-center items-center gap-1  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2 max-w-96 ">
+            {balance} Coin{" "}
             <svg
               width="20"
               height="20"
@@ -139,3 +140,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
