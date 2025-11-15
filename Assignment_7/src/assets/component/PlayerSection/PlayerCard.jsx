@@ -13,6 +13,8 @@ const PlayerCard = ({ card, addToSelected, balance, updateBalance }) => {
     action,
   } = card;
 
+  const [click2, setClick2] = useState(false);
+
   return (
     <div className="pb-48">
       <div className="card bg-base-100 w-96 shadow-sm max-w-9/10  border border-slate-300/50">
@@ -81,8 +83,10 @@ const PlayerCard = ({ card, addToSelected, balance, updateBalance }) => {
             <button
               onClick={() => {
                 addToSelected(card);
-                updateBalance(Number(price)); 
+                updateBalance(Number(price));
+                setClick2(1);
               }}
+              disabled={click2}
               className="text-slate-300 p-1 rounded border"
             >
               Choose Player
