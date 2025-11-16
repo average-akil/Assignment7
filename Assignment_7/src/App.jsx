@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { toast } from "react-toastify";
+
 import Header from "./assets/component/Header/Header";
 import Hero from "./assets/component/Hero/Hero";
 import NavBar from "./assets/component/PlayerSection/NavBar";
@@ -13,6 +13,7 @@ function App() {
   const [selectedPlayers, setSelectedPlayers] = useState([]);
   const [balance, setBalance] = useState(0);
   const [addPlayer, setAddPlayer] = useState(0);
+  const [view, setView] = useState("available");
 
   const addToSelected = (card) => {
     const ids = new Set(selectedPlayers.map((p) => p.id));
@@ -27,17 +28,13 @@ function App() {
 
   const removeSelected = (id) => {
     setSelectedPlayers((prev) => {
-      const player = prev.find((p) => {
-        p.id === id;
-      });
+      const player = prev.find((p) => p.id === id);
+
       if (player) {
-        setBalance((b) => {
-          b + (Number(player.price) || 0);
-        });
+        setBalance(balance + (Number(player.price) ));
       }
-      return prev.filter((p) => {
-        p.id !== id;
-      });
+
+      return prev.filter((p) => p.id !== id);
     });
   };
 
@@ -62,18 +59,25 @@ function App() {
         <Header balance={balance}></Header>
         <Hero setBalance={setBalance}></Hero>
 
-        <NavBar></NavBar>
-        <div className="pb-48">
+        <NavBar
+          view={view}
+          setView={setView}
+          selectedPlayers={selectedPlayers}
+        ></NavBar>
+        {view === "available" && (
           <PlayerCards
             addToSelected={addToSelected}
             selectedPlayers={selectedPlayers}
             updateBalance={updateBalance}
-          ></PlayerCards>
+          />
+        )}
+        {view === "selected" && (
           <Selected_players
             selectedPlayers={selectedPlayers}
             removeSelected={removeSelected}
-          ></Selected_players>
-        </div>
+          />
+        )}
+
         <div className="relative top-15">
           <NewsLetter></NewsLetter>
         </div>

@@ -3,10 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="pt-48 bg-[040D11]">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center ">
         <img src="../../../../assets/logo-footer.png" alt="" />
       </div>
-      <div className="flex justify-between container mx-auto lg:px-16 md:px-8 px-8 ">
+      <div className="lg:flex lg:justify-between container mx-auto lg:px-16 md:px-8 px-8 md:flex md:flex-col md:justify-center md:items-center flex flex-col justify-center items-center  ">
         <div className="space-y-2">
           {/* about us */}
           <h1 className="font-bold">About Us</h1>

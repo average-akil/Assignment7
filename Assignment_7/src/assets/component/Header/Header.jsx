@@ -7,11 +7,11 @@ const Header = ({balance}) => {
       <div>
         <img src="../../../../assets/logo.png" alt="" />
       </div>
-      <div className="max-w-2/5 flex gap-4 items-center">
-        <button className= " text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Home</button>
-        <button className="text-slate-500 hover:text-black  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Fixture</button>
-        <button className="text-slate-500 hover:text-black  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Team</button>
-        <button className="text-slate-500 hover:text-black  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Schedule</button>
+      <div className="max-w-2/5 lg:flex lg:gap-4 lg:items-center md:flex md:gap-4 md:items-center flex items-center justify-center" >
+        <button className= "sm:hidden text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Home</button>
+        <button className=" sm:hidden text-slate-500 hover:text-black  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Fixture</button>
+        <button className= " sm:hidden text-slate-500 hover:text-black  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Team</button>
+        <button className="sm:hidden text-slate-500 hover:text-black  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2">Schedule</button>
      
           <button id="Balance" className="text-slate-500 hover:text-black flex justify-center items-center gap-1  text-slate-500 hover:text-black hover:border-1 hover:border-gray-300 hover:rounded-xl hover:p-2 max-w-96 ">
             {balance} Coin{" "}

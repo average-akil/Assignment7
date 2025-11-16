@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PlayerCard from "./PlayerCard";
-
-const PlayerCards = ({ addToSelected, selectedPlayers = [] ,updateBalance }) => {
+import NavBar from "./NavBar";
+const PlayerCards = ({
+  addToSelected,
+  selectedPlayers = [],
+  updateBalance,
+}) => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -13,8 +17,8 @@ const PlayerCards = ({ addToSelected, selectedPlayers = [] ,updateBalance }) => 
 
   return (
     <div>
-      <h1 className="text-black">Player API length: {cards.length}</h1>
-      <div className="text-4xl grid grid-cols-3 gap-4 ">
+    
+      <div className="text-4xl lg:grid lg:grid-cols-3 lg:gap-4 md:grid md:grid-cols-2 md:gap-3 flex flex-col justify-center items-center gap-3 ">
         {cards.map((card) => (
           <PlayerCard
             key={card.id}

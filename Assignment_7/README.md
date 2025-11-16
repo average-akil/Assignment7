@@ -1,16 +1,37 @@
-# React + Vite
+# 🏏 Assemble Your Dream Cricket Team
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Build and manage your ultimate fantasy cricket squad with this React-based web application.  
+The app fetches real player data from an API and lets you select, manage, and balance your team — all with a clean, modern UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Description
+This project is a **fantasy cricket team builder** where users can browse available players, add them to their squad, and manage selections with budget constraints. It demonstrates **React fundamentals** like state management, props, conditional rendering, and API integration, while offering an interactive and fun experience for cricket fans.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
+- **React.js** – component-based UI development  
+- **Tailwind CSS** – modern utility-first styling  
+- **JavaScript (ES6+)** – logic and interactivity  
+- **React Hooks (useState, useEffect)** – state and lifecycle management  
+- **API Integration** – fetching player data dynamically  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+1. **Dynamic Player Cards**  
+   Fetches player data from an API and displays them with images, stats, and roles.
+
+2. **Team Selection & Management**  
+   Add players to your dream team, view selected players separately, and remove them when needed.
+
+3. **Balance Tracking**  
+   Claim credits, spend them on players, and update your balance automatically with validation to prevent overspending.
+
+---
+
+## 🚀 Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/dream-cricket-team.git
